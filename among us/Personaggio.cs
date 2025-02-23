@@ -42,10 +42,14 @@ namespace Among_us
         private bool inVita;
         private int posizioneY;
         private string nome;
-        protected string[] inventario;
+        public string[] inventario { get; set; }
         private string colore;
         protected List<string> messaggi;
         
+        public string[] GetInventario()
+        {
+            return inventario;
+        }
         
         public bool InVita
         {

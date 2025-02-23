@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\",
+  "WorkspaceRootPath": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Impostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Impostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\GestoreGioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestoreGioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\impostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:impostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\mappa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:mappa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\seghe\\onedrive\\desktop\\progetto\\among us\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +38,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -45,53 +61,94 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GestoreGioco.cs",
-              "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\GestoreGioco.cs",
-              "RelativeDocumentMoniker": "GestoreGioco.cs",
-              "ToolTip": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\GestoreGioco.cs",
-              "RelativeToolTip": "GestoreGioco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T11:43:27.562Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Task.cs",
+              "RelativeDocumentMoniker": "Task.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Task.cs",
+              "RelativeToolTip": "Task.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvx8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:50:03.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mappa1.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\mappa1.cs",
+              "RelativeDocumentMoniker": "mappa1.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\mappa1.cs",
+              "RelativeToolTip": "mappa1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:12:28.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestoreGioco.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\GestoreGioco.cs",
+              "RelativeDocumentMoniker": "GestoreGioco.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\GestoreGioco.cs",
+              "RelativeToolTip": "GestoreGioco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:43:27.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Impostore.cs",
-              "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Impostore.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Impostore.cs",
               "RelativeDocumentMoniker": "Impostore.cs",
-              "ToolTip": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Impostore.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Impostore.cs",
               "RelativeToolTip": "Impostore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T11:17:43.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Personaggio.cs",
-              "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Personaggio.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Personaggio.cs",
               "RelativeDocumentMoniker": "Personaggio.cs",
-              "ToolTip": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Personaggio.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Personaggio.cs",
               "RelativeToolTip": "Personaggio.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAowDQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T09:48:42.161Z"
+              "WhenOpened": "2025-02-23T09:48:42.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Astronauta.cs",
-              "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Astronauta.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Astronauta.cs",
               "RelativeDocumentMoniker": "Astronauta.cs",
-              "ToolTip": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Astronauta.cs",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Astronauta.cs",
               "RelativeToolTip": "Astronauta.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:16:04.472Z"
+              "WhenOpened": "2025-02-22T16:16:04.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -99,14 +156,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Progettazione]",
-              "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\progetto among us\\among us\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\mattia\\Desktop\\among us\\Form1.cs [Progettazione]",
-              "RelativeToolTip": "..\\..\\among us\\Form1.cs [Progettazione]",
+              "ToolTip": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "Form1.cs [Progettazione]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:15:01.371Z"
+              "WhenOpened": "2025-02-22T16:15:01.371Z",
+              "EditorCaption": " [Progettazione]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
