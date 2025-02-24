@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Among_us
 {
-    public class mappa1
+    public class Mappa1
     {
-        public void disegmaMappa()
+        public void disegnaMappa()
         {
             string[] mappa = new string[]
             {
                 "     | 1 |     | 2 |     | 3 |  ",
-                "     | 4 |     | 5 |     | 6 |[ 7 |  ",
+                "     | 4 |     | 5 |     | 6 || 7 |  ",
                 "| 8 || 9 ||10 ||11 ||12 ||13 |",
                 "     |14 |     |15 |     |16 ||17 |  ",
                 "     |18 |     |19 |     |20 |  "

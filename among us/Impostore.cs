@@ -20,9 +20,16 @@ namespace Among_us
             messaggi = new List<string>();
         }
 
-        public void usaBotola()
+        public void usaBotola(Mappa mappa)
         {
-
+            if (mappa.Botola == true)
+            {
+                //TODO - cambiare posizionex e posizioney del personaggio
+            }
+            else
+            {
+                throw new Exception("non c'è nessuna botola disponibile");
+            }
         }
 
     }

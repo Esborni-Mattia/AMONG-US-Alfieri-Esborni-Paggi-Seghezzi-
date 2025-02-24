@@ -17,19 +17,17 @@ namespace Among_us
             svolta = false;
         }
 
-        public void Svolgi(Personaggio giocatore)
+        public void Svolgi(Personaggio giocatore, Oggetto oggetto)
         {
             if (serveOggetto == false && svolta == false)
             {
                 svolta = true;
-                throw new Exception("hai svolto la task");
             }
             if (serveOggetto == true && svolta == false)
             {
-                if (giocatore.GetInventario().Contains(oggetto)) //TODO - fare classe oggetto per sistemare questo problema
+                if (giocatore.guarda_zaino().ToList().Contains(oggetto.Nome))
                 {
                     svolta = true;
-                    throw new Exception("hai svolto la task");
                 }
             }
             if (svolta == true)

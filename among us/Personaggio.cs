@@ -46,10 +46,6 @@ namespace Among_us
         private string colore;
         protected List<string> messaggi;
         
-        public string[] GetInventario()
-        {
-            return inventario;
-        }
         
         public bool InVita
         {

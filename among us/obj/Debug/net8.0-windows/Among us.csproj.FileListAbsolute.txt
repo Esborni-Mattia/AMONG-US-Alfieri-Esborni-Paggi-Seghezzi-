@@ -1,0 +1,7 @@
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among_us.Form1.resources
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.csproj.GenerateResource.cache
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfoInputs.cache
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfo.cs
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.csproj.CoreCompileInputs.cache
+C:\Users\mattia\Desktop\AMONGUS\among us\obj\Debug\net8.0-windows\Among us.sourcelink.json

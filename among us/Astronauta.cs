@@ -31,11 +31,6 @@ namespace Among_us
             {
                 InVita = false;
             }
-        }
-
-
-        
-
-        
+        }   
     }
 }
