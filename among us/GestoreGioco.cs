@@ -10,7 +10,10 @@ namespace Among_us
     {
         private int turnoAttuale;
         private int numGiocatori;
+        public static List<Personaggio> giocatori = new List<Personaggio>();
 
+        
+        
         public int NumGiocatori
         {
             get { return numGiocatori; }
@@ -33,6 +36,11 @@ namespace Among_us
                 }
                 turnoAttuale = value;
             }
+        }
+
+        public override string ToString()
+        {
+            return $"E' il turno di {giocatori[].Nome}";
         }
     }
 }
