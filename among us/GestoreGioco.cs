@@ -40,7 +40,17 @@ namespace Among_us
 
         public override string ToString()
         {
-            return $"E' il turno di {giocatori[].Nome}";
+            return $"E' il turno di {giocatori[TurnoAttuale].Nome}";
+        }
+
+        public string MostraAmbiente(Ambiente a)
+        {
+            return $"nome ambiente: {a.nome}";
+        }
+
+        public string MostraQuest(Ambiente am)
+        {
+            return $"task ambiente: {am.quest}";
         }
     }
 }
