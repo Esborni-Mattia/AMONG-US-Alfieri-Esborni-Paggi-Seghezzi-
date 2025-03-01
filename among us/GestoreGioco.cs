@@ -12,14 +12,14 @@ namespace Among_us
         private int numGiocatori;
         public static List<Personaggio> giocatori = new List<Personaggio>();
 
-        
-        
+
+
         public int NumGiocatori
         {
             get { return numGiocatori; }
             set
             {
-                if(value<4 || value > 16)
+                if (value < 4 || value > 16)
                 {
                     throw new ArgumentException("numero giocatori non valido");
                 }
@@ -28,7 +28,7 @@ namespace Among_us
         public int TurnoAttuale
         {
             get { return turnoAttuale; }
-            set 
+            set
             {
                 if (value <= 0)
                 {
@@ -51,6 +51,13 @@ namespace Among_us
         public string MostraQuest(Ambiente am)
         {
             return $"task ambiente: {am.quest}";
+        }
+        public void FineTurno()
+        {
+            foreach (Personaggio giocatore in giocatori)
+            {
+                giocatore.ResetStato();
+            }
         }
     }
 }

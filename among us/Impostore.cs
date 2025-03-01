@@ -32,5 +32,32 @@ namespace Among_us
             }
         }
 
+        public void UsaBotola(Mappa partenza, Mappa arrivo)
+        {
+            CambiaStato("Ha appena usato una botola");
+            partenza.NotificaGiocatori($"{Nome} ha usato una botola!");
+            arrivo.NotificaGiocatori($"Qualcuno è comparso da una botola!");
+            PosizioneAttuale = arrivo;
+        }
+        public void Uccidi(Personaggio bersaglio)
+        {
+            if (bersaglio.StatoAttuale == "Ha appena svolto un incarico in questa stanza")
+            {
+                // Uccisione sicura
+                CambiaStato("Ha appena commesso un omicidio");
+                PosizioneAttuale.NotificaGiocatori($"{Nome} ha ucciso qualcuno!");
+            }
+            else
+            {
+                // Probabilità 50%
+                bool successo = new Random().Next(2) == 0;
+                if (successo)
+                {
+                    CambiaStato("Ha appena commesso un omicidio");
+                    PosizioneAttuale.NotificaGiocatori($"{Nome} ha ucciso qualcuno!");
+                }
+            }
+
+        }
     }
 }

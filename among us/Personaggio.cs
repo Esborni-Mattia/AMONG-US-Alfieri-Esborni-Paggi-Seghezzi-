@@ -45,8 +45,10 @@ namespace Among_us
         public string[] inventario { get; set; }
         private string colore;
         protected List<string> messaggi;
-        
-        
+
+        private string statoAttuale = "Normale";
+        private Mappa posizioneAttuale;
+
         public bool InVita
         {
             get { return inVita; }
@@ -108,7 +110,28 @@ namespace Among_us
                 posizioneX = value;
             }
         }
-
+        public string StatoAttuale
+        {
+            get
+            {
+                return statoAttuale;
+            }
+            set
+            {
+                StatoAttuale = value;
+            }
+        }
+        public Mappa PosizioneAttuale
+        {
+            get
+            {
+                return posizioneAttuale;
+            }
+            set
+            {
+                posizioneAttuale = value;
+            }
+        }
         public virtual void spostamento(string direzione)
         {
             switch (direzione.ToLower())
@@ -172,7 +195,7 @@ namespace Among_us
             //bisogna prima creare la classe oggetto con gli attributi della posizione
         }
 
-        
+
         public virtual string[] guarda_zaino()
         {
             return inventario;
@@ -180,7 +203,7 @@ namespace Among_us
 
         public virtual void Parla_con(Personaggio giocatore, string messaggio)
         {
-            if(giocatore.PosizioneX==PosizioneX && giocatore.PosizioneY == PosizioneY)//significa che sono nella stessa stanza e possono comunicare
+            if (giocatore.PosizioneX == PosizioneX && giocatore.PosizioneY == PosizioneY)//significa che sono nella stessa stanza e possono comunicare
             {
                 giocatore.messaggi.Add($"mittente: {giocatore.Nome}, colore: {giocatore.Colore}, ambiente di invio: {PosizioneX}:{PosizioneY} messaggio: {messaggio}");
             }
@@ -190,13 +213,19 @@ namespace Among_us
             }
         }
 
-        
+
         public virtual List<string> vedi_messaggi()
         {
             return messaggi;
         }
+        public void CambiaStato(string nuovoStato)
+        {
+            StatoAttuale = nuovoStato;
+        }
 
-        
-        
+        public void ResetStato()
+        {
+            StatoAttuale = "Normale";
+        }
     }
 }

@@ -8,11 +8,15 @@ namespace Among_us
 {
     public abstract class Mappa
     {
-        private bool botola;
-        public bool Botola
+        public List<Personaggio> GiocatoriPresenti = new List<Personaggio>();
+
+
+        public void NotificaGiocatori(string messaggio)
         {
-            get { return botola; }
-            set { botola = value; }
+            foreach (Personaggio giocatore in GiocatoriPresenti)
+            {
+                Console.WriteLine($"Messaggio per {giocatore.Nome}: {messaggio}");
+            }
         }
 
     }

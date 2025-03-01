@@ -11,7 +11,7 @@ namespace Among_us
 {
     public class Astronauta : Personaggio
     {
-        public Astronauta(string nome, string colore, int posizioneX, int posizioneY, bool stagiocando) : base(nome,colore,posizioneX,posizioneY,stagiocando)
+        public Astronauta(string nome, string colore, int posizioneX, int posizioneY, bool stagiocando) : base(nome, colore, posizioneX, posizioneY, stagiocando)
         {
             Nome = nome;
             Colore = colore;
@@ -23,7 +23,7 @@ namespace Among_us
         }
         public void accusa(Personaggio giocatore)
         {
-            if(giocatore is Impostore && giocatore.InVita==true)
+            if (giocatore is Impostore && giocatore.InVita == true)
             {
                 giocatore.InVita = false;
             }
@@ -31,6 +31,11 @@ namespace Among_us
             {
                 InVita = false;
             }
-        }   
+        }
+        public void SvolgiQuest()
+        {
+            CambiaStato("Ha appena svolto un incarico in questa stanza");
+            PosizioneAttuale.NotificaGiocatori($"{Nome} ha completato un incarico!");
+        }
     }
 }

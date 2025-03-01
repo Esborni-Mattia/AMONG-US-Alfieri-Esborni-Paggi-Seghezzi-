@@ -28,7 +28,7 @@ namespace Among_us
         private bool serveOggetto;
         private bool svolta;
         private oggetti oggetto;
-        private 
+        
 
         public oggetti Oggetto
         {
