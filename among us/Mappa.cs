@@ -11,12 +11,13 @@ namespace Among_us
         public List<Personaggio> GiocatoriPresenti = new List<Personaggio>();
 
 
-        public void NotificaGiocatori(string messaggio)
+        public string NotificaGiocatori(string messaggio)
         {
-            foreach (Personaggio giocatore in GiocatoriPresenti)
+            foreach (Personaggio g in GiocatoriPresenti)
             {
-                Console.WriteLine($"Messaggio per {giocatore.Nome}: {messaggio}");
+                    return $"Messaggio per {g.Nome}: {messaggio}";
             }
+            return "";
         }
 
     }

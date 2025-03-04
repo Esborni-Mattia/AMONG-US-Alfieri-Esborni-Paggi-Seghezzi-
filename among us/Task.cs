@@ -27,40 +27,38 @@ namespace Among_us
     {
         private bool serveOggetto;
         private bool svolta;
-        private oggetti oggetto;
-        
+        private oggetti? oggettonecessario;
+        public bool Completata => svolta; 
+        public oggetti? Oggettonecessario => oggettonecessario; 
 
-        public oggetti Oggetto
+        public Task(bool servOgg, oggetti? oggetto = null)
         {
-            get { return oggetto; }
-            set
-            {
-
-            }
-        }
-
-        public Task(bool servOgg)
-        {
+            oggettonecessario = oggetto;
             serveOggetto = servOgg;
             svolta = false;
         }
 
         public void Svolgi(Personaggio giocatore, Oggetto oggetto)
         {
+            if (svolta)
+            {
+                throw new Exception("task già svolta");
+            }
             if (serveOggetto == false && svolta == false)
             {
                 svolta = true;
             }
             if (serveOggetto == true && svolta == false)
             {
-                if (giocatore.guarda_zaino().ToList().Contains(oggetto.Nome))
+                if (oggettonecessario == null)
                 {
-                    svolta = true;
+                    throw new Exception("la task ha bisogno di un oggetto ma non è stato detto quale");
                 }
-            }
-            if (svolta == true)
-            {
-                throw new Exception("task già svolta");
+                if (!giocatore.guarda_zaino().ToList().Contains(oggetto.Nome))
+                {
+                    throw new Exception($" Serve {Oggettonecessario} per svolgere la task");
+                }
+                svolta = true;
             }
         }
     }

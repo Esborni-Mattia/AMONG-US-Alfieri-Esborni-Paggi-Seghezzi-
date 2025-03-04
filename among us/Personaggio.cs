@@ -44,7 +44,7 @@ namespace Among_us
         private string nome;
         public string[] inventario { get; set; }
         private string colore;
-        protected List<string> messaggi;
+        public List<string> messaggi;
 
         private string statoAttuale = "Normale";
         private Mappa posizioneAttuale;

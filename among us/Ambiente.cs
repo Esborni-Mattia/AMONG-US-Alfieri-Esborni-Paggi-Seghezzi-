@@ -9,15 +9,16 @@ namespace Among_us
     public class Ambiente
     {
         public string nome { get; set; }
-        public Task quest { get; set; }
-        public bool botola { get; set; }
+
+        public string Descrizione { get; set; }
+        public Task? quest { get; set; }
 
 
-        public Ambiente(string n, Task q, bool b)
+        public Ambiente(string n,string d, Task? t = null)
         {
             nome = n;
-            quest = q;
-            botola = b;
+            quest = t;
+            Descrizione = d;
         }
 
     }
