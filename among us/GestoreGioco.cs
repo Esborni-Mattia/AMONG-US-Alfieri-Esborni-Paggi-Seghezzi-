@@ -10,6 +10,7 @@ namespace Among_us
     {
         private int turnoAttuale;
         private int numGiocatori;
+        private static Random rnd = new Random();
         public static List<Personaggio> giocatori = new List<Personaggio>();
 
 

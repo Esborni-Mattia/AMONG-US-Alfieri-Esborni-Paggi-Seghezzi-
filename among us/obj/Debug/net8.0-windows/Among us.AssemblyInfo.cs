@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Among us")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cac2dccb2dd2a25e45a864a5035c39be86267f1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1796ce61685c2e052f8c129c325a8529f4963bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Among us")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Among us")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
