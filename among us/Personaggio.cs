@@ -132,22 +132,48 @@ namespace Among_us
                 posizioneAttuale = value;
             }
         }
-        public virtual void spostamento(string direzione)
+        public virtual void spostamento(string direzione, int[,] mappa)
         {
             switch (direzione.ToLower())
             {
                 case "sud":
+                    if(PosizioneY - 1 == 1)
+                    {
+                        throw new ArgumentException("non puoi muoverti dove ci sono muri");
+                    }
                     PosizioneY -= 1;
                     break;
                 case "est":
+                    if (PosizioneX + 1 == 1)
+                    {
+                        throw new ArgumentException("non puoi muoverti dove ci sono muri");
+                    }
                     PosizioneX += 1;
                     break;
                 case "ovest":
+                    if (PosizioneX - 1 == 1)
+                    {
+                        throw new ArgumentException("non puoi muoverti dove ci sono muri");
+                    }
                     PosizioneX -= 1;
                     break;
                 case "nord":
+                    if (PosizioneY + 1 == 1)
+                    {
+                        throw new ArgumentException("non puoi muoverti dove ci sono muri");
+                    }
                     PosizioneY += 1;
                     break;
+            }
+            if (PosizioneX < 0 || PosizioneX >= mappa.GetLength(1) || PosizioneY < 0 || PosizioneY >= mappa.GetLength(0))
+            {
+                throw new ArgumentException("Non puoi uscire dai limiti della mappa");
+            }
+
+            // Controllo se la nuova posizione è un muro
+            if (mappa[PosizioneY, PosizioneX] == 1)
+            {
+                throw new ArgumentException("Non puoi muoverti dove ci sono muri");
             }
         }
 
