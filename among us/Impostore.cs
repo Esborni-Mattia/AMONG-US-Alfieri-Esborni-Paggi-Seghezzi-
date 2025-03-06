@@ -16,7 +16,7 @@ namespace Among_us
             PosizioneX = posizioneX;
             PosizioneY = posizioneY;
             InVita = stagiocando;
-            inventario = new string[2];
+            inventario = new Oggetto[2];
             messaggi = new List<string>();
         }
 

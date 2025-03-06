@@ -10,10 +10,14 @@ namespace Among_us
     {
         private int turnoAttuale;
         private int numGiocatori;
-        public static List<Personaggio> giocatori = new List<Personaggio>();
+        private static List<Personaggio> giocatori = new List<Personaggio>();
 
 
-
+        public GestoreGioco(int nGioc)
+        {
+            NumGiocatori = nGioc;
+            TurnoAttuale = 0;
+        }
         public int NumGiocatori
         {
             get { return numGiocatori; }
@@ -30,7 +34,7 @@ namespace Among_us
             get { return turnoAttuale; }
             set
             {
-                if (value <= 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("turno non valido");
                 }
@@ -38,6 +42,32 @@ namespace Among_us
             }
         }
 
+        public void Crea_Giocatore(Personaggio p)
+        {
+            foreach(Personaggio i in giocatori)
+            {
+                if(i.Nome == p.Nome)
+                {
+                    throw new ArgumentException("non possono esserci più giocatori con lo stesso nome");
+                }
+                else
+                {
+                    giocatori.Add(p);
+                }
+            }
+        }
+        public void Elimina_Giocatore(int pos)
+        {
+            if(pos<0 || pos > giocatori.Count)
+            {
+                throw new ArgumentException("giocatore inesistente");
+            }
+            else
+            {
+                giocatori.RemoveAt(pos);
+            }
+        }
+        
         public override string ToString()
         {
             return $"E' il turno di {giocatori[TurnoAttuale].Nome}";

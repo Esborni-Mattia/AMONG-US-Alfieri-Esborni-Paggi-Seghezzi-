@@ -39,9 +39,9 @@ namespace Among_us
                 {
                     throw new Exception("la task ha bisogno di un oggetto ma non è stato detto quale");
                 }
-                if (!giocatore.guarda_zaino().ToList().Contains(oggetto.Nome.ToString()))
+                if (!giocatore.guarda_zaino().ToList().Contains(oggetto))
                 {
-                    throw new Exception($" Serve {Oggettonecessario} per svolgere la task");
+                    throw new Exception($"Serve {Oggettonecessario} per svolgere la task");
                 }
                 svolta = true;
             }

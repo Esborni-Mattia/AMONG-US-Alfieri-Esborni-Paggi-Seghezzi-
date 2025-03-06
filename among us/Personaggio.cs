@@ -15,7 +15,7 @@ namespace Among_us
             InVita = stagiocando;
             PosizioneX = posizioneX;
             PosizioneY = posizioneY;
-            inventario = new string[2];
+            inventario = new Oggetto[2];
             messaggi = new List<string>();
         }
         private static List<string> ListaColori = new List<string>
@@ -42,7 +42,7 @@ namespace Among_us
         private bool inVita;
         private int posizioneY;
         private string nome;
-        public string[] inventario { get; set; }
+        public Oggetto[] inventario { get; set; }
         private string colore;
         public List<string> messaggi;
 
@@ -177,17 +177,17 @@ namespace Among_us
             }
         }
 
-        public virtual void PrendiOggetto(string oggetto)
+        public virtual void PrendiOggetto(Oggetto oggetto)
         {
             int Nelementi_inventario = 0;
-            foreach (string i in inventario)
+            foreach (Oggetto i in inventario)
             {
                 if (i != null)
                 {
                     Nelementi_inventario += 1;
                 }
             }
-            foreach (string i in inventario)
+            foreach (Oggetto i in inventario)
             {
                 if (Nelementi_inventario < 2)
                 {
@@ -215,14 +215,21 @@ namespace Among_us
             }
             else
             {
+                
                 inventario[pos_oggetto_nel_array] = null;
+
             }
+            
+            
+            
+            
+            
             //TODO - fare in modo che l'oggetto rilasciato rimanga nella stanza in cui c'è stato il rilascio
             //bisogna prima creare la classe oggetto con gli attributi della posizione
         }
 
 
-        public virtual string[] guarda_zaino()
+        public virtual Oggetto[] guarda_zaino()
         {
             return inventario;
         }

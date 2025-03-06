@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\mappa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +19,16 @@
       "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\mappa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:mappa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\ambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:ambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:personaggio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:gestoregioco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\mappa 3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,6 +43,10 @@
       "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:impostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|c:\\users\\mattia\\desktop\\amongus\\among us\\oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:oggetto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B122A9B-EF59-4548-A087-558556A22870}|Among us.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Ambiente.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Ambiente.cs",
               "RelativeDocumentMoniker": "Ambiente.cs",
@@ -103,129 +103,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "mappa1.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa1.cs",
               "RelativeDocumentMoniker": "mappa1.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa1.cs",
               "RelativeToolTip": "mappa1.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwCEAAAB4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T14:12:28.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Task.cs",
               "RelativeDocumentMoniker": "Task.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Task.cs",
               "RelativeToolTip": "Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T14:50:03.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Mappa.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Mappa.cs",
               "RelativeDocumentMoniker": "Mappa.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Mappa.cs",
               "RelativeToolTip": "Mappa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T09:01:42.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Astronauta.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Astronauta.cs",
               "RelativeDocumentMoniker": "Astronauta.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Astronauta.cs",
               "RelativeToolTip": "Astronauta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T16:16:04.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Oggetto.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Oggetto.cs",
               "RelativeDocumentMoniker": "Oggetto.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Oggetto.cs",
               "RelativeToolTip": "Oggetto.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwBcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T08:51:01.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Personaggio.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Personaggio.cs",
               "RelativeDocumentMoniker": "Personaggio.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Personaggio.cs",
               "RelativeToolTip": "Personaggio.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAiwKcAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAANgAAAAAAAAAAAAiwOkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T09:48:42.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "GestoreGioco.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\GestoreGioco.cs",
               "RelativeDocumentMoniker": "GestoreGioco.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\GestoreGioco.cs",
               "RelativeToolTip": "GestoreGioco.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwD0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T11:43:27.562Z"
+              "WhenOpened": "2025-02-23T11:43:27.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "mappa 3.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa 3.cs",
               "RelativeDocumentMoniker": "mappa 3.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa 3.cs",
               "RelativeToolTip": "mappa 3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T16:34:02.085Z"
+              "WhenOpened": "2025-03-04T16:34:02.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "mappa2.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa2.cs",
               "RelativeDocumentMoniker": "mappa2.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\mappa2.cs",
               "RelativeToolTip": "mappa2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T16:33:47.792Z"
+              "WhenOpened": "2025-03-04T16:33:47.792Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Impostore.cs",
               "DocumentMoniker": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Impostore.cs",
               "RelativeDocumentMoniker": "Impostore.cs",
               "ToolTip": "C:\\Users\\mattia\\Desktop\\AMONGUS\\among us\\Impostore.cs",
               "RelativeToolTip": "Impostore.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwD0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T11:17:43.841Z"
+              "WhenOpened": "2025-02-23T11:17:43.841Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
