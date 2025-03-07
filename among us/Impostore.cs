@@ -47,6 +47,7 @@ namespace Among_us
                 // Uccisione sicura
                 CambiaStato("Ha appena commesso un omicidio");
                 PosizioneAttuale.NotificaGiocatori($"{Nome} ha ucciso qualcuno!");
+                bersaglio.InVita = false;
             }
             else
             {
@@ -56,6 +57,11 @@ namespace Among_us
                 {
                     CambiaStato("Ha appena commesso un omicidio");
                     PosizioneAttuale.NotificaGiocatori($"{Nome} ha ucciso qualcuno!");
+                    bersaglio.InVita = false;
+                }
+                else
+                {
+                    
                 }
             }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Among_us
 {
-    public class mappa_3 : Mappa
+    public class Mappa_3 : Mappa
     {
     }
 }

@@ -215,7 +215,7 @@ namespace Among_us
             }
         }
 
-        public virtual void LasciaOggetto(int pos_oggetto_nel_array) //probabilmente dovrà essere di tipo string perchè ritornerà l'elemento rilasciato
+        public virtual void LasciaOggetto(int pos_oggetto_nel_array) //probabilmente dovrà essere di tipo Oggetto perchè ritornerà l'elemento rilasciato
         {
             if (pos_oggetto_nel_array < 0 || pos_oggetto_nel_array > 2)
             {
