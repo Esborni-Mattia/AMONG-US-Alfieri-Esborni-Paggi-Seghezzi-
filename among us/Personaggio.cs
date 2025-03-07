@@ -48,6 +48,7 @@ namespace Among_us
 
         private string statoAttuale = "Normale";
         private Mappa posizioneAttuale;
+        private Mappa posizioneArrivo;
 
         public bool InVita
         {
@@ -132,6 +133,13 @@ namespace Among_us
                 posizioneAttuale = value;
             }
         }
+
+        public Mappa PosizioneArrivo
+        {
+            get { return posizioneArrivo; }
+            set { posizioneArrivo = value; }
+        }
+
         public virtual void spostamento(string direzione, int[,] mappa)
         {
             switch (direzione.ToLower())

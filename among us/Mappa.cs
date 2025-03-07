@@ -9,6 +9,7 @@ namespace Among_us
     public abstract class Mappa
     {
         public List<Personaggio> GiocatoriPresenti = new List<Personaggio>();
+        public bool Botole {  get; set; }
 
 
         public string NotificaGiocatori(string messaggio)

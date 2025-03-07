@@ -22,9 +22,10 @@ namespace Among_us
 
         public void usaBotola(Mappa mappa)
         {
-            if (mappa.Botola == true)
+            if (mappa.Botole == true)
             {
                 //TODO - cambiare posizionex e posizioney del personaggio
+                UsaBotola(PosizioneAttuale, PosizioneArrivo);
             }
             else
             {
