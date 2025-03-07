@@ -8,5 +8,9 @@ namespace Among_us
 {
     public class Mappa_3 : Mappa
     {
+        public Mappa_3()
+        {
+
+        }
     }
 }
