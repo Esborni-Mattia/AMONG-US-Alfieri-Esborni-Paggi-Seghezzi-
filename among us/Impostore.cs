@@ -62,6 +62,7 @@ namespace Among_us
                 else
                 {
                     
+                    bersaglio.InVita = true;
                 }
             }
 

@@ -145,7 +145,7 @@ namespace Among_us
             switch (direzione.ToLower())
             {
                 case "sud":
-                    if(PosizioneY - 1 == 1)
+                    if (PosizioneY - 1 == 1)
                     {
                         throw new ArgumentException("non puoi muoverti dove ci sono muri");
                     }
@@ -215,27 +215,22 @@ namespace Among_us
             }
         }
 
-        public virtual void LasciaOggetto(int pos_oggetto_nel_array) //probabilmente dovrà essere di tipo Oggetto perchè ritornerà l'elemento rilasciato
+        public virtual void LasciaOggetto(int pos_oggetto_nel_array, Ambiente nuovaPosizione) //probabilmente dovrà essere di tipo Oggetto perchè ritornerà l'elemento rilasciato
         {
-            if (pos_oggetto_nel_array < 0 || pos_oggetto_nel_array > 2)
+            if (pos_oggetto_nel_array < 0 || pos_oggetto_nel_array >= inventario.Length)
             {
-                throw new ArgumentException("posizione non valida");
+                throw new ArgumentException("Posizione non valida");
             }
             else
             {
-                
-                inventario[pos_oggetto_nel_array] = null;
-
+                Oggetto oggettoRilasciato = inventario[pos_oggetto_nel_array]; // recupero oggetto
+                if (oggettoRilasciato != null)
+                {
+                    oggettoRilasciato.posizione = nuovaPosizione;
+                    inventario[pos_oggetto_nel_array] = null;
+                }
             }
-            
-            
-            
-            
-            
-            //TODO - fare in modo che l'oggetto rilasciato rimanga nella stanza in cui c'è stato il rilascio
-            //bisogna prima creare la classe oggetto con gli attributi della posizione
         }
-
 
         public virtual Oggetto[] guarda_zaino()
         {

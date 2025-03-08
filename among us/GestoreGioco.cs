@@ -11,6 +11,7 @@ namespace Among_us
         private int turnoAttuale;
         private int numGiocatori;
         private static List<Personaggio> giocatori = new List<Personaggio>();
+        private static Random rnd = new Random();
 
 
         public GestoreGioco(int nGioc)
@@ -27,6 +28,7 @@ namespace Among_us
                 {
                     throw new ArgumentException("numero giocatori non valido");
                 }
+                numGiocatori = value;
             }
         }
         public int TurnoAttuale
@@ -53,6 +55,24 @@ namespace Among_us
                 else
                 {
                     giocatori.Add(p);
+
+                    int numImpostori = 0;
+                    if (numGiocatori < 16 && numGiocatori%4 == 0) numImpostori = Math.Abs(numGiocatori / 4);
+                    else throw new ArgumentException("più di 16 giocatori");
+
+
+                        Random rnd = new Random();
+                    HashSet<int> impostoriSelezionati = new HashSet<int>(); //lista che non accetta duplicati
+
+                    while (impostoriSelezionati.Count < numImpostori)
+                    {
+                        int estratto = rnd.Next(0, giocatori.Count);
+                        if (!(giocatori[estratto] is Impostore))  // Controlla che non sia già un impostore
+                        {
+                            giocatori[estratto] = new Impostore(giocatori[estratto].Nome, giocatori[estratto].Colore, giocatori[estratto].PosizioneX, giocatori[estratto].PosizioneY, true); // Converte in impostore
+                            impostoriSelezionati.Add(estratto);
+                        }                       
+                    }
                 }
             }
         }
@@ -67,6 +87,8 @@ namespace Among_us
                 giocatori.RemoveAt(pos);
             }
         }
+
+        
         
         public override string ToString()
         {
