@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.AxHost;
 
 namespace Among_us
 {
@@ -66,7 +67,7 @@ namespace Among_us
             botoleCollegate[(3, 5)] = (1, 5); 
         }
 
-        public (int, int) Teletrasporta(int x, int y)
+        public (int, int) Teletrasporta(int x, int y)  //funzione per le botole
         {
             if (!botoleCollegate.ContainsKey((x, y)))
             {
@@ -77,13 +78,18 @@ namespace Among_us
             return (newX, newY);
         }
 
-        public oggetti generazione_casuale_oggetti()
+        public oggetti generazione_casuale_oggetti() //funzione per generare casualmente gli oggetti delle task nelle stanze all'inizio del gioco
         {
             int a=rnd.Next(0, strumenti.Count);
             oggetti oggettoCasuale=strumenti[a];
             strumenti.RemoveAt(a);
             return oggettoCasuale;
 
+        }
+        public Ambiente? GetStanza(int x, int y)    //ritorna la posizione della stanza nella mappa
+        {
+            ambienti.TryGetValue((x, y), out Ambiente stanza);
+            return stanza;
         }
     }
 }

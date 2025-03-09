@@ -140,6 +140,38 @@ namespace Among_us
             set { posizioneArrivo = value; }
         }
 
+        public List<Ambiente> StanzeAdiacenti(Mappa1 mappa)  //ritorna una lista con le stanze adiacenti al giocatore
+        {
+            List<Ambiente> stanze = new List<Ambiente>();
+
+            Ambiente nord = mappa.GetStanza(PosizioneX, PosizioneY + 1);
+            if (nord != null)
+            {
+                stanze.Add(nord);
+            }
+
+            Ambiente sud = mappa.GetStanza(PosizioneX, PosizioneY - 1);
+            if (sud != null)
+            {
+                stanze.Add(sud);
+            }
+
+            Ambiente est = mappa.GetStanza(PosizioneX + 1, PosizioneY);
+            if (est != null)
+            {
+                stanze.Add(est);
+            }
+
+            Ambiente ovest = mappa.GetStanza(PosizioneX - 1, PosizioneY);
+            if (ovest != null)
+            {
+                stanze.Add(ovest);
+            }
+
+            return stanze;
+        }
+
+
         public virtual void spostamento(string direzione, int[,] mappa)
         {
             switch (direzione.ToLower())
@@ -214,6 +246,7 @@ namespace Among_us
                 }
             }
         }
+
 
         public virtual void LasciaOggetto(int pos_oggetto_nel_array, Ambiente nuovaPosizione) //probabilmente dovrà essere di tipo Oggetto perchè ritornerà l'elemento rilasciato
         {
