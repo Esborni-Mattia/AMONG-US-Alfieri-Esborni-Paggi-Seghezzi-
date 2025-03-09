@@ -41,12 +41,13 @@ namespace Among_us
             }
         }
 
-        public Oggetto(oggetti nome, Ambiente pos)
+        public Oggetto(oggetti nome, Ambiente a)
         {
             Nome = nome;
-            posizione = pos;
+            posizione = a;
         }
 
+        
 
 
     }

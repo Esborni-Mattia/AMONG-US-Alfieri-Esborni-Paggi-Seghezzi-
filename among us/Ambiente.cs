@@ -38,12 +38,15 @@ namespace Among_us
         public string Descrizione { get; set; }
         public Task? quest { get; set; }
 
+        public oggetti? oggetto { get; set; }
 
-        public Ambiente(Ambienti n,string d, Task? t = null)
+
+        public Ambiente(Ambienti n,string d, Task? t = null, oggetti? o=null)
         {
             nome = n;
             quest = t;
             Descrizione = d;
+            oggetto = o;
         }
 
     }
