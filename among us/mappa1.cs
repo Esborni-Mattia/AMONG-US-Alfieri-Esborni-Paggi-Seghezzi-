@@ -9,7 +9,7 @@ namespace Among_us
 {
     public class Mappa1 : Mappa
     {
-        public void disegnaMappa()
+        public int[,] disegnaMappa()
         {
             int[,] mappa = //0 - calpestabile, 1 - muro 
             {
@@ -19,6 +19,7 @@ namespace Among_us
             {1, 0, 1, 0, 1, 2, 1},  
             {1, 2, 1, 0, 1, 0, 1},  
             };
+            return mappa;
         }
         private Dictionary<(int, int), Ambiente> ambienti = new Dictionary<(int, int), Ambiente>();
         private Dictionary<(int, int), (int, int)> botoleCollegate = new Dictionary<(int, int), (int, int)>();

@@ -13,7 +13,6 @@ namespace Among_us
         private static List<Personaggio> giocatori = new List<Personaggio>();
         private static Random rnd = new Random();
 
-
         public GestoreGioco(int nGioc)
         {
             NumGiocatori = nGioc;
@@ -44,13 +43,16 @@ namespace Among_us
             }
         }
 
+
+        
+
         public void Crea_Giocatore(Personaggio p)
         {
             foreach(Personaggio i in giocatori)
             {
-                if(i.Nome == p.Nome)
+                if(i.Nome == p.Nome || i.Colore == p.Colore)
                 {
-                    throw new ArgumentException("non possono esserci più giocatori con lo stesso nome");
+                    throw new ArgumentException("non possono esserci più giocatori con lo stesso nome o colore");
                 }
                 else
                 {
@@ -61,7 +63,6 @@ namespace Among_us
                     else throw new ArgumentException("più di 16 giocatori");
 
 
-                        Random rnd = new Random();
                     HashSet<int> impostoriSelezionati = new HashSet<int>(); //lista che non accetta duplicati
 
                     while (impostoriSelezionati.Count < numImpostori)
@@ -110,6 +111,19 @@ namespace Among_us
             {
                 giocatore.ResetStato();
             }
+        }
+        public string MostraCreazionePersona(Personaggio p)
+        {
+            string a;
+            if(p is Impostore)
+            {
+                a = "IMPOSTORE";
+            }
+            else
+            {
+                a = "ASTRONAUTA";
+            }
+            return $"Ciao {p.Nome}, indossi la tuta spaziale {p.Colore} e giochi come {a}";
         }
     }
 }

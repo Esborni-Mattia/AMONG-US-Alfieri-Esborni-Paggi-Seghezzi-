@@ -140,7 +140,7 @@ namespace Among_us
             set { posizioneArrivo = value; }
         }
 
-        public List<Ambiente> StanzeAdiacenti(Mappa1 mappa)  //ritorna una lista con le stanze adiacenti al giocatore
+        public virtual List<Ambiente> StanzeAdiacenti(Mappa1 mappa)  //ritorna una lista con le stanze adiacenti al giocatore
         {
             List<Ambiente> stanze = new List<Ambiente>();
 
@@ -274,7 +274,7 @@ namespace Among_us
         {
             if (giocatore.PosizioneX == PosizioneX && giocatore.PosizioneY == PosizioneY)//significa che sono nella stessa stanza e possono comunicare
             {
-                giocatore.messaggi.Add($"mittente: {giocatore.Nome}, colore: {giocatore.Colore}, ambiente di invio: {PosizioneX}:{PosizioneY} messaggio: {messaggio}");
+                giocatore.messaggi.Add($"mittente: {Nome}, colore: {Colore}, ambiente di invio: {PosizioneX}:{PosizioneY} messaggio: {messaggio}");
             }
             else
             {
