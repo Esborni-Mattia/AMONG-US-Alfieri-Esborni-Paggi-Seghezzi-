@@ -10,6 +10,7 @@ namespace Among_us
     {
         private int turnoAttuale;
         private int numGiocatori;
+        private bool[] turnazzi;
         private static List<Personaggio> giocatori = new List<Personaggio>();
         private static Random rnd = new Random();
 
@@ -17,6 +18,7 @@ namespace Among_us
         {
             NumGiocatori = nGioc;
             TurnoAttuale = 0;
+            turnazzi = new bool[nGioc];
         }
         public int NumGiocatori
         {

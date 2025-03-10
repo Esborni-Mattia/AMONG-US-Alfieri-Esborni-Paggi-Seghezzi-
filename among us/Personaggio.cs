@@ -18,6 +18,10 @@ namespace Among_us
             inventario = new Oggetto[2];
             messaggi = new List<string>();
         }
+        public override string ToString()
+        {
+            return $"NOME: {Nome}, COLORE: {Colore}";
+        }
         private static List<string> ListaColori = new List<string>
         {
         "Rosso",

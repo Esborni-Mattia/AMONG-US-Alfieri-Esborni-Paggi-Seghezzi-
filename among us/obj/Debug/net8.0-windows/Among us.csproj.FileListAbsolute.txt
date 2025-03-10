@@ -22,3 +22,20 @@ C:\Users\seghe\OneDrive\Desktop\Progetto\among us\obj\Debug\net8.0-windows\refin
 C:\Users\seghe\OneDrive\Desktop\Progetto\among us\obj\Debug\net8.0-windows\Among us.pdb
 C:\Users\seghe\OneDrive\Desktop\Progetto\among us\obj\Debug\net8.0-windows\Among us.genruntimeconfig.cache
 C:\Users\seghe\OneDrive\Desktop\Progetto\among us\obj\Debug\net8.0-windows\ref\Among us.dll
+C:\Users\mattia\Desktop\progetto amongus\among us\bin\Debug\net8.0-windows\Among us.exe
+C:\Users\mattia\Desktop\progetto amongus\among us\bin\Debug\net8.0-windows\Among us.deps.json
+C:\Users\mattia\Desktop\progetto amongus\among us\bin\Debug\net8.0-windows\Among us.runtimeconfig.json
+C:\Users\mattia\Desktop\progetto amongus\among us\bin\Debug\net8.0-windows\Among us.dll
+C:\Users\mattia\Desktop\progetto amongus\among us\bin\Debug\net8.0-windows\Among us.pdb
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among_us.Form1.resources
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.csproj.GenerateResource.cache
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfoInputs.cache
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfo.cs
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.csproj.CoreCompileInputs.cache
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.sourcelink.json
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.dll
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\refint\Among us.dll
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.pdb
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\Among us.genruntimeconfig.cache
+C:\Users\mattia\Desktop\progetto amongus\among us\obj\Debug\net8.0-windows\ref\Among us.dll
