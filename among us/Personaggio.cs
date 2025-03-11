@@ -20,7 +20,7 @@ namespace Among_us
         }
         public override string ToString()
         {
-            return $"NOME: {Nome}, COLORE: {Colore}";
+            return $"NOME: {Nome}, COLORE: {Colore}";      //da visualizzare nella inizializzazione dei personaggi
         }
         private static List<string> ListaColori = new List<string>
         {
