@@ -82,7 +82,7 @@ namespace Among_us
                 }
                 foreach (char c in value)
                 {
-                    if (char.IsLetter(value[c]))
+                    if (!char.IsLetter(c))
                     {
                         throw new ArgumentException("il nome può contenere solo lettere");
                     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Among_us;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,55 +45,60 @@ namespace Among_us
                 turnoAttuale = value;
             }
         }
-
-
-        
-
-        public void Crea_Giocatore(Personaggio p)
+        public List<Personaggio> Giocatori
         {
-            foreach(Personaggio i in giocatori)
+            get { return giocatori; }
+        }
+        public Personaggio Crea_Giocatore(Personaggio p)
+        {
+            foreach (Personaggio i in giocatori)
             {
-                if(i.Nome == p.Nome || i.Colore == p.Colore)
+                if (i.Nome == p.Nome || i.Colore == p.Colore)
                 {
-                    throw new ArgumentException("non possono esserci più giocatori con lo stesso nome o colore");
+                    throw new ArgumentException("Non possono esserci più giocatori con lo stesso nome o colore");
                 }
-                else
+            }
+
+            giocatori.Add(p);
+            if (giocatori.Count == numGiocatori)
+            {
+                AssegnaImpostori();
+            }
+
+            return p;
+        }
+        public void AssegnaImpostori()
+        {
+            int numImpostori = numGiocatori / 4;
+            HashSet<int> impostoriSelezionati = new HashSet<int>();
+            for (int i = 0; i < giocatori.Count; i++)
+            {
+                giocatori[i] = new Astronauta(giocatori[i].Nome, giocatori[i].Colore, giocatori[i].PosizioneX, giocatori[i].PosizioneY, true);
+            }
+
+            while (impostoriSelezionati.Count < numImpostori)
+            {
+                int estratto = rnd.Next(0, giocatori.Count);
+                Personaggio g = giocatori[estratto];
+                if (!(g is Impostore))
                 {
-                    giocatori.Add(p);
-
-                    int numImpostori = 0;
-                    if (numGiocatori < 16 && numGiocatori%4 == 0) numImpostori = Math.Abs(numGiocatori / 4);
-                    else throw new ArgumentException("più di 16 giocatori");
-
-
-                    HashSet<int> impostoriSelezionati = new HashSet<int>(); //lista che non accetta duplicati
-
-                    while (impostoriSelezionati.Count < numImpostori)
-                    {
-                        int estratto = rnd.Next(0, giocatori.Count);
-                        if (!(giocatori[estratto] is Impostore))  // Controlla che non sia già un impostore
-                        {
-                            giocatori[estratto] = new Impostore(giocatori[estratto].Nome, giocatori[estratto].Colore, giocatori[estratto].PosizioneX, giocatori[estratto].PosizioneY, true); // Converte in impostore
-                            impostoriSelezionati.Add(estratto);
-                        }                       
-                    }
+                    giocatori[estratto] = new Impostore(g.Nome, g.Colore, g.PosizioneX, g.PosizioneY, true);
+                    impostoriSelezionati.Add(estratto);
                 }
             }
         }
-        public void Elimina_Giocatore(int pos)
+        public void Elimina_Giocatore(Personaggio p)
         {
-            if(pos<0 || pos > giocatori.Count)
+            if (!giocatori.Contains(p))
             {
-                throw new ArgumentException("giocatore inesistente");
+                throw new ArgumentException("Giocatore inesistente");
             }
-            else
+            giocatori.Remove(p);
+            if (giocatori.Count >= 4)
             {
-                giocatori.RemoveAt(pos);
+                AssegnaImpostori();
             }
         }
-
-        
-        
         public override string ToString()
         {
             return $"E' il turno di {giocatori[TurnoAttuale].Nome}";
@@ -114,18 +120,11 @@ namespace Among_us
                 giocatore.ResetStato();
             }
         }
-        public string MostraCreazionePersona(Personaggio p)
+        public string GetRuoloGiocatore(Personaggio p)
         {
-            string a;
-            if(p is Impostore)
-            {
-                a = "IMPOSTORE";
-            }
-            else
-            {
-                a = "ASTRONAUTA";
-            }
-            return $"Ciao {p.Nome}, indossi la tuta spaziale {p.Colore} e giochi come {a}";
+            return p is Impostore ? "IMPOSTORE" : "ASTRONAUTA";
         }
     }
 }
+
+
