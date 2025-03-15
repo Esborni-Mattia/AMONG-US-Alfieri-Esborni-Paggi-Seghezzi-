@@ -79,7 +79,7 @@ namespace Among_us
                 string nome = textBox1.Text;
                 string colore = comboBox1.SelectedItem.ToString();
                 Personaggio nuovoGiocatore = new Astronauta(nome, colore, 0, 1, true);
-                nuovoGiocatore = gestore.Crea_Giocatore(nuovoGiocatore); 
+                nuovoGiocatore = gestore.Crea_Giocatore(nuovoGiocatore);
                 giocatori.Add(nuovoGiocatore);
                 AggiornaPulsanteAggiungi();
                 if (giocatori.Count == (int)comboBox2.SelectedItem)
@@ -112,10 +112,10 @@ namespace Among_us
                 Personaggio giocatoreDaRimuovere = null;
                 foreach (Personaggio g in gestore.Giocatori)
                 {
-                    if (g.Nome.Equals(nomeSelezionato, StringComparison.OrdinalIgnoreCase)) 
+                    if (g.Nome.Equals(nomeSelezionato, StringComparison.OrdinalIgnoreCase))
                     {
                         giocatoreDaRimuovere = g;
-                        break; 
+                        break;
                     }
                 }
                 if (giocatoreDaRimuovere == null)
@@ -142,5 +142,47 @@ namespace Among_us
         {
 
         }
-    }
+
+        private void rilasciaOgg_Click(object sender, EventArgs e, Personaggio p)
+        {
+            if (listBoxINVENTARIO.SelectedIndex != -1)
+            {
+                int index = listBoxINVENTARIO.SelectedIndex;
+                Oggetto oggettoDaRilasciare = p.inventario[index];
+                if (oggettoDaRilasciare != null)
+                {
+                    p.inventario[index] = null;
+                    listBoxINVENTARIO.Items.RemoveAt(index);
+                    MessageBox.Show($"Hai rilasciato {oggettoDaRilasciare.Nome}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleziona un oggetto da rilasciare.");
+            }
+        }
+
+        private void prendiOgg_Click(object sender, EventArgs e, Personaggio p)
+        {
+            if (listBoxINVENTARIO.SelectedIndex != -1)
+            {
+                Oggetto nuovoOggetto = (Oggetto)listBoxINVENTARIO.SelectedItem;
+                for (int i = 0; i < p.inventario.Length; i++)
+                {
+                    if (p.inventario[i] == null)
+                    {
+                        p.inventario[i] = nuovoOggetto;
+                        listBoxINVENTARIO.Items.Add(nuovoOggetto);
+                        listBoxINVENTARIO.Items.Remove(nuovoOggetto);
+                        MessageBox.Show($"Hai preso {nuovoOggetto.Nome}");
+                        return;
+                    }
+                }
+                MessageBox.Show("Inventario pieno!");
+            }
+            else
+            {
+                MessageBox.Show("Seleziona un oggetto da prendere.");
+            }
+        }
 }
