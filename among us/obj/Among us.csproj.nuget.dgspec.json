@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seghe\\OneDrive\\Desktop\\AmonGus\\among us\\Among us.csproj": {}
+    "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Among us.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seghe\\OneDrive\\Desktop\\AmonGus\\among us\\Among us.csproj": {
+    "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Among us.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seghe\\OneDrive\\Desktop\\AmonGus\\among us\\Among us.csproj",
+        "projectUniqueName": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Among us.csproj",
         "projectName": "Among us",
-        "projectPath": "C:\\Users\\seghe\\OneDrive\\Desktop\\AmonGus\\among us\\Among us.csproj",
+        "projectPath": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\Among us.csproj",
         "packagesPath": "C:\\Users\\seghe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seghe\\OneDrive\\Desktop\\AmonGus\\among us\\obj\\",
+        "outputPath": "C:\\Users\\seghe\\OneDrive\\Desktop\\Progetto\\among us\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
