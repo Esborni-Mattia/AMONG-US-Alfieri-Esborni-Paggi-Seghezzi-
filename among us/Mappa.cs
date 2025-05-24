@@ -84,5 +84,22 @@ namespace Among_us
             return "";
         }
 
+        public void SpostaPersonaggio(Personaggio p, int nuovaX, int nuovaY)
+        {
+            // Rimuovi il personaggio da tutte le stanze
+            foreach (var stanza in ambienti.Values)
+            {
+                stanza.RimuoviPersone(p);
+            }
+
+            // Aggiorna le coordinate
+            p.PosizioneX = nuovaX;
+            p.PosizioneY = nuovaY;
+
+            // Aggiungi alla nuova stanza
+            GetStanza(nuovaX, nuovaY)?.AggiungiPersone(p);
+        }
+
+
     }
 }

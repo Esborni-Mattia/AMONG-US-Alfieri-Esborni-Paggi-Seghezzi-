@@ -41,11 +41,15 @@ namespace Among_us
         public Oggetto Oggetto { get; set; }
         public List<Personaggio> Personaggio { get; set; }
         public string Immagine { get; set; }
-        public void AggiungiPersone(ref Personaggio p)
+        public void AggiungiPersone(Personaggio p)
         {
-            Personaggio.Add(p);
+            if (!Personaggio.Contains(p))
+            {
+                Personaggio.Add(p);
+            }
         }
-        public void RimuoviPersone(ref Personaggio p)
+
+        public void RimuoviPersone(Personaggio p)
         {
             if (Personaggio.Contains(p))
             {

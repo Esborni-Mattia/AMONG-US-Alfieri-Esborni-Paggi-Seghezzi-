@@ -28,7 +28,6 @@ namespace Among_us
         public Mappa_3()
         {
             Map = disegnaMappa(); 
-            CollegaBotole();
             InizializzaAmbienti();
 
         }
@@ -56,29 +55,6 @@ namespace Among_us
             ambienti[(5, 5)] = new Ambiente(Ambienti.PonteOsservazione, "Una grande finestra panoramica offre una vista spettacolare delle stelle. Qualche sedia è ribaltata.", "pannello_di_osservazione.png", new Task(true, oggetti.attrezzo_multiuso), generazione_casuale_oggetti());
             ambienti[(5, 6)] = new Ambiente(Ambienti.Stiva, "Contenitori di rifornimenti sono sparsi in giro. Una parte del pavimento sembra danneggiata.", "stiva.png", new Task(true, oggetti.saldatrice));
         }
-        private void CollegaBotole()
-        {
-            botoleCollegate[(0, 3)] = (2, 3);  //stanze collegate dalle  botole
-            botoleCollegate[(2, 3)] = (0, 3);
-
-            botoleCollegate[(1, 1)] = (4, 1);
-            botoleCollegate[(4, 1)] = (1, 1);
-
-            botoleCollegate[(1, 5)] = (3, 5);
-            botoleCollegate[(3, 5)] = (1, 5);
-        }
-
-        public (int, int) Teletrasporta(int x, int y)
-        {
-            if (!botoleCollegate.ContainsKey((x, y)))
-            {
-                throw new Exception("Non sei su una botola!");
-            }
-
-            (int newX, int newY) = botoleCollegate[(x, y)];
-            return (newX, newY);
-        }
-
         public Ambiente? GetStanza(int x, int y)    //ritorna la posizione della stanza nella mappa
         {
             ambienti.TryGetValue((x, y), out Ambiente stanza);

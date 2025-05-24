@@ -104,7 +104,7 @@ namespace Among_us
             // Inizializza come Astronauta (tutti iniziano come astronauti)
             Personaggio nuovoGiocatore = new Astronauta(nome, colore, 0, 1, true);
             giocatori.Add(nuovoGiocatore);
-            mappa.GetStanza(nuovoGiocatore.PosizioneX, nuovoGiocatore.PosizioneY).AggiungiPersone(ref nuovoGiocatore);
+            mappa.GetStanza(nuovoGiocatore.PosizioneX, nuovoGiocatore.PosizioneY).AggiungiPersone(nuovoGiocatore);
 
             // Il primo giocatore aggiunto diventa automaticamente il giocatore attuale
             if (giocatori.Count == 1)
@@ -182,7 +182,7 @@ namespace Among_us
                     turnoAttuale--;
                 }
 
-                mappa.GetStanza(p.PosizioneX, p.PosizioneY).RimuoviPersone(ref p);
+                mappa.GetStanza(p.PosizioneX, p.PosizioneY).RimuoviPersone(p);
                 giocatori.Remove(p);
 
 

@@ -209,7 +209,7 @@ namespace Among_us
             // Inizializza la mappa e le altre informazioni di gioco
             CaricaImmagini();
             carica_posizioni();
-            
+
             try
             {
                 AggiornaLBOggetti();
@@ -481,7 +481,7 @@ namespace Among_us
                 }
 
                 gestore.CambiaTurno();
-                
+
                 // Aggiorna l'interfaccia
                 CaricaImmagini();
                 carica_posizioni();
@@ -502,38 +502,26 @@ namespace Among_us
             }
         }
 
-        private void button7_Click(object sender, EventArgs e) // attraversa porta
+
+        private void button7_Click(object sender, EventArgs e)
         {
             try
             {
                 if (gestore == null)
-                {
                     throw new Exception("Nessuna partita in corso");
-                }
 
                 if (listBox5.SelectedIndex == -1)
-                {
                     throw new Exception("Seleziona una direzione");
-                }
 
                 string direzione = (string)listBox5.SelectedItem;
 
-                // Salva le coordinate attuali
-                int vecchiaX = gestore.GiocatoreAttuale.PosizioneX;
-                int vecchiaY = gestore.GiocatoreAttuale.PosizioneY;
-                Personaggio p = gestore.GiocatoreAttuale;
-                // Rimuovi esplicitamente il giocatore dalla stanza corrente
-                gestore.GetMappa().GetStanza(vecchiaX, vecchiaY).RimuoviPersone(ref p);
-                List<Personaggio> g1 = gestore.GetMappa().GetStanza(gestore.GiocatoreAttuale.PosizioneX, gestore.GiocatoreAttuale.PosizioneY).Personaggio;
-                // Aggiorna le coordinate del giocatore
-                gestore.GiocatoreAttuale.spostamento(direzione, gestore.GetMappa().getStanze());
+                gestore.GiocatoreAttuale.spostamento(
+                direzione,
+                gestore.GetMappa().getStanze(),
+                gestore.GetMappa()
+                );
 
-                // Aggiungi esplicitamente il giocatore alla nuova stanza
-                gestore.GetMappa().GetStanza(gestore.GiocatoreAttuale.PosizioneX, gestore.GiocatoreAttuale.PosizioneY).AggiungiPersone(ref p);
-                List<Personaggio> g = gestore.GetMappa().GetStanza(gestore.GiocatoreAttuale.PosizioneX, gestore.GiocatoreAttuale.PosizioneY).Personaggio;
-                // Verifica dello spostamento (debug)
-                MessageBox.Show($"Spostamento: da ({vecchiaX},{vecchiaY}) a ({gestore.GiocatoreAttuale.PosizioneX},{gestore.GiocatoreAttuale.PosizioneY})");
-
+                MessageBox.Show($"Spostamento effettuato in direzione {direzione}");
 
                 CaricaImmagini();
                 carica_posizioni();
@@ -541,10 +529,8 @@ namespace Among_us
                 AggiornaGiocatori();
                 AggiornaInfoTask();
 
-                // Passa al turno successivo
                 gestore.CambiaTurno();
 
-                // Aggiorna nuovamente l'interfaccia dopo il cambio turno
                 CaricaImmagini();
                 carica_posizioni();
                 AggiornaLBOggetti();
@@ -557,6 +543,7 @@ namespace Among_us
                 MessageBox.Show(ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void listagiocatori_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -701,7 +688,7 @@ namespace Among_us
             }
             if (gestore.Controllo_vittoria_svolgimento_task() == true)
             {
-                MessageBox.Show("FINE PARTITA","non ci sono più task da svolgere, gli ASTRONAUTI vincono",MessageBoxButtons.OK);
+                MessageBox.Show("FINE PARTITA", "non ci sono più task da svolgere, gli ASTRONAUTI vincono", MessageBoxButtons.OK);
                 Application.Exit();
             }
         }
@@ -718,6 +705,10 @@ namespace Among_us
                 if (!(gestore.GiocatoreAttuale is Impostore))
                 {
                     throw new Exception("Solo gli impostori possono uccidere");
+                }
+                if(gestore.GetMappa().GetStanza(0,0) == gestore.GetMappa().GetStanza(gestore.GiocatoreAttuale.PosizioneY,gestore.GiocatoreAttuale.PosizioneX))
+                {
+                    throw new Exception("non puoi uccidere nella prima stanza");
                 }
 
                 if (listBox2.SelectedIndex == -1)
@@ -759,7 +750,7 @@ namespace Among_us
                 AggiornaInfoTask();
                 if (gestore.Controllo_vittoria_morte_astronauti() == true)
                 {
-                    MessageBox.Show("TERMINE PARTITA","non ci sono più astronauti, vittoria IMPOSTORI",MessageBoxButtons.OK);
+                    MessageBox.Show("TERMINE PARTITA", "non ci sono più astronauti, vittoria IMPOSTORI", MessageBoxButtons.OK);
                     Application.Exit();
                 }
 
@@ -778,7 +769,10 @@ namespace Among_us
                 {
                     throw new Exception("Nessuna partita in corso");
                 }
-
+                if (gestore.GetMappa().GetStanza(0, 0) == gestore.GetMappa().GetStanza(gestore.GiocatoreAttuale.PosizioneY, gestore.GiocatoreAttuale.PosizioneX))
+                {
+                    throw new Exception("non puoi accusare nella prima stanza");
+                }
 
                 if (listBox2.SelectedIndex == -1)
                 {
@@ -788,7 +782,7 @@ namespace Among_us
                 // Ottieni la vittima selezionata
                 Personaggio vittima = (Personaggio)listBox2.SelectedItem;
 
-                
+
                 if (vittima == gestore.GiocatoreAttuale)
                 {
                     throw new Exception("Non puoi accusare te stesso");
@@ -808,7 +802,7 @@ namespace Among_us
                 // Aggiorna l'interfaccia
                 MessageBox.Show($"Hai accusato {vittima.Nome}!");
 
-                
+
 
 
                 // Aggiorna le liste
@@ -825,9 +819,9 @@ namespace Among_us
                 AggiornaGiocatori();
                 AggiornaInfoTask();
 
-                if (gestore.Controllo_vittoria_morte_impostori()==true)
+                if (gestore.Controllo_vittoria_morte_impostori() == true)
                 {
-                    MessageBox.Show("TERMINE PARTITA","non ci sono più impostori, vittoria ASTRONAUTI",MessageBoxButtons.OK);
+                    MessageBox.Show("TERMINE PARTITA", "non ci sono più impostori, vittoria ASTRONAUTI", MessageBoxButtons.OK);
                     Application.Exit();
                 }
 
@@ -837,6 +831,10 @@ namespace Among_us
                 MessageBox.Show(ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

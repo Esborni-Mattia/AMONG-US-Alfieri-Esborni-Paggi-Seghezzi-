@@ -179,39 +179,41 @@ namespace Among_us
         {
             return direzioni;
         }
-        public virtual void spostamento(string direzione, int[,] mappa)
-        {   
-            if(direzione == null) { throw new Exception("Seleziona una direzione"); }
+
+
+        public virtual void spostamento(string direzione, int[,] mappa, Mappa mappaOggetti)
+        {
+            if (direzione == null)
+                throw new Exception("Seleziona una direzione");
+
+            int nuovaX = PosizioneX;
+            int nuovaY = PosizioneY;
+
             switch (direzione.ToLower())
             {
-                case "ovest": //sinistra
-                    
-                    PosizioneY -= 1;
-                    break;
-                case "sud": //sotto
-                    
-                    PosizioneX += 1;
-                    break;
-                case "nord": //sopra
-                    
-                    PosizioneX -= 1;
-                    break;
-                case "est": //destra
-                    
-                    PosizioneY += 1;
-                    break;
+                case "ovest": nuovaY -= 1; break;
+                case "sud": nuovaX += 1; break;
+                case "nord": nuovaX -= 1; break;
+                case "est": nuovaY += 1; break;
+                default: throw new ArgumentException("Direzione non valida");
             }
-            if (PosizioneX < 0 || PosizioneX >= mappa.GetLength(1) || PosizioneY < 0 || PosizioneY >= mappa.GetLength(0))
+
+            if (nuovaX < 0 || nuovaX >= mappa.GetLength(0) ||
+            nuovaY < 0 || nuovaY >= mappa.GetLength(1))
             {
                 throw new ArgumentException("Non puoi uscire dai limiti della mappa");
             }
 
-            // Controllo se la nuova posizione è un muro
-            if (mappa[PosizioneX,PosizioneY] == 1)
+            if (mappa[nuovaX, nuovaY] == 1)
             {
                 throw new ArgumentException("Non puoi muoverti dove ci sono muri");
             }
+
+            // Sposta il personaggio usando la logica centralizzata nella mappa
+            mappaOggetti.SpostaPersonaggio(this, nuovaX, nuovaY);
         }
+
+
 
         public virtual void PrendiOggetto(Oggetto oggetto)
         {   

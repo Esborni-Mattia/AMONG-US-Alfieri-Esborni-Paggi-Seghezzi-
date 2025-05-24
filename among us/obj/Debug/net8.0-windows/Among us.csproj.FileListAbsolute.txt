@@ -226,3 +226,20 @@ C:\Users\mattia\Desktop\AMONGCLA (4)\AMONGCLA (4)\AMONGCLA (2)\AMONGCLA\progetss
 C:\Users\mattia\Desktop\AMONGCLA (4)\AMONGCLA (4)\AMONGCLA (2)\AMONGCLA\progetsss\progetsss\Progetto\Progetto\among us\obj\Debug\net8.0-windows\Among us.pdb
 C:\Users\mattia\Desktop\AMONGCLA (4)\AMONGCLA (4)\AMONGCLA (2)\AMONGCLA\progetsss\progetsss\Progetto\Progetto\among us\obj\Debug\net8.0-windows\Among us.genruntimeconfig.cache
 C:\Users\mattia\Desktop\AMONGCLA (4)\AMONGCLA (4)\AMONGCLA (2)\AMONGCLA\progetsss\progetsss\Progetto\Progetto\among us\obj\Debug\net8.0-windows\ref\Among us.dll
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\bin\Debug\net8.0-windows\Among us.exe
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\bin\Debug\net8.0-windows\Among us.deps.json
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\bin\Debug\net8.0-windows\Among us.runtimeconfig.json
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\bin\Debug\net8.0-windows\Among us.dll
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\bin\Debug\net8.0-windows\Among us.pdb
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among_us.Form1.resources
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.csproj.GenerateResource.cache
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfoInputs.cache
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.AssemblyInfo.cs
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.csproj.CoreCompileInputs.cache
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.sourcelink.json
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.dll
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\refint\Among us.dll
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.pdb
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\Among us.genruntimeconfig.cache
+C:\Users\ANDREAALFIERI\Desktop\digitalUs\among us\obj\Debug\net8.0-windows\ref\Among us.dll
