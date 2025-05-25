@@ -19,27 +19,6 @@ namespace Among_us
             inventario = new List<Oggetto>();
             messaggi = new List<string>();
         }
-
-        public void usaBotola(Mappa mappa)
-        {
-            if (mappa.Botole == true)
-            {
-                //TODO - cambiare posizionex e posizioney del personaggio
-                UsaBotola(PosizioneAttuale, PosizioneArrivo);
-            }
-            else
-            {
-                throw new Exception("non c'è nessuna botola disponibile");
-            }
-        }
-
-        public void UsaBotola(Mappa partenza, Mappa arrivo)
-        {
-            CambiaStato("Ha appena usato una botola");
-            partenza.NotificaGiocatori($"{Nome} ha usato una botola!");
-            arrivo.NotificaGiocatori($"Qualcuno è comparso da una botola!");
-            PosizioneAttuale = arrivo;
-        }
         public void Uccidi(ref Personaggio bersaglio)
         {
             // Verifica che il bersaglio sia nella stessa stanza

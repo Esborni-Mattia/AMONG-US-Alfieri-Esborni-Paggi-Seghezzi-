@@ -23,7 +23,7 @@ namespace Among_us
         {
             return $"NOME: {Nome}, COLORE: {Colore}";      //da visualizzare nella inizializzazione dei personaggi
         }
-        private static List<string> ListaColori = new List<string>
+        private List<string> ListaColori = new List<string>
         {
         "Rosso",
         "Blu",

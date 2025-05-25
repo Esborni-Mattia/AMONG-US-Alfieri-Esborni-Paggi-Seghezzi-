@@ -32,11 +32,5 @@ namespace Among_us
                 InVita = false;
             }
         }
-        public void SvolgiQuest()
-        {
-            CambiaStato("Ha appena svolto un incarico in questa stanza");
-
-            PosizioneAttuale.NotificaGiocatori($"{Nome} ha completato un incarico!");
-        }
     }
 }

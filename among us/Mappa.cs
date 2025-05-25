@@ -10,7 +10,6 @@ namespace Among_us
     public abstract class Mappa
     {
         public List<Personaggio> GiocatoriPresenti = new List<Personaggio>();
-        public bool Botole {  get; set; }
         protected int[,] Map;
         protected static Random rnd = new Random();
         protected static List<Oggetto> strumenti = new List<Oggetto>()
@@ -30,7 +29,6 @@ namespace Among_us
             new Oggetto(oggetti.casco_di_ricambio)
         };
         protected Dictionary<(int, int), Ambiente> ambienti = new Dictionary<(int, int), Ambiente>();
-        protected Dictionary<(int, int), (int, int)> botoleCollegate = new Dictionary<(int, int), (int, int)>();
         public abstract int[,] disegnaMappa();
         public void getStrumenti(List<Oggetto> o)
         {
@@ -75,19 +73,10 @@ namespace Among_us
             //se tutte le stanze sono senza quest o le quest sono tutte svolte, ritorna true
             return true;
         }
-        public string NotificaGiocatori(string messaggio)
-        {
-            foreach (Personaggio g in GiocatoriPresenti)
-            {
-                    return $"Messaggio per {g.Nome}: {messaggio}";
-            }
-            return "";
-        }
-
         public void SpostaPersonaggio(Personaggio p, int nuovaX, int nuovaY)
         {
             // Rimuovi il personaggio da tutte le stanze
-            foreach (var stanza in ambienti.Values)
+            foreach (Ambiente stanza in ambienti.Values)
             {
                 stanza.RimuoviPersone(p);
             }
